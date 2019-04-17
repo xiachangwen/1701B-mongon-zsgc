@@ -1,0 +1,10 @@
+    
+1，通过HbuildX，生成前端项目结构
+
+2，放在 SRC 文件夹下
+
+3，配置gulpfile.js文件，起服务
+
+4，index.html 需要js 通过require.js来管理（data-main）
+
+5，开始前端页面及业务逻辑管理（mui.ajax（））
