@@ -8,10 +8,12 @@ gulp.task("webserve", () => {
 	return gulp.src("./src/")
 			.pipe(servert({
 				open:true,
-				port:8090,
+				port:8000,
 				livereload:true,
-				proxies:[{
-					source:"/api/findUsr",target:"http://localhost:3000/api/findUsr"
-				}]
+				proxies:[
+					{source:"/api/findUsr",target:"http://localhost:3000/api/findUsr"},
+					{source:"/api/findone",target:"http://localhost:3000/api/findone"},//详细信息
+					{source:"/api/update",target:"http://localhost:3000/api/update"},//更改信息
+				]
 			}))
 })
