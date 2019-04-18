@@ -13,7 +13,9 @@ gulp.task("webserve", () => {
 				proxies:[
 					{source:"/api/findUsr",target:"http://localhost:3000/api/findUsr"},
 					{source:"/api/findone",target:"http://localhost:3000/api/findone"},//详细信息
-					{source:"/api/update",target:"http://localhost:3000/api/update"},//更改信息
+					{source:"/api/addupdate",target:"http://localhost:3000/api/addupdate"},//更改信息
+					{source:"/api/getdelete",target:"http://localhost:3000/api/getdelete"},//删除
+					{source:"/api/getadd",target:"http://localhost:3000/api/getadd"}//添加
 				]
 			}))
 })

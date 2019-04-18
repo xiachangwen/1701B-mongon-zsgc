@@ -6,3 +6,9 @@
 	position: relative;
 	right: 85px !important;
 }
+.mui-btn-outlined{
+	position: absolute;
+	top: 5px !important;
+	right: 10px !important;
+	z-index: 33;
+}
